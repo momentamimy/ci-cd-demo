@@ -22,8 +22,7 @@ jobs:
       - name: install ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '2.6'
-          bundler-cache: true
+          ruby-version: '3.3.5'
           working-directory: android
 
       - name: build and distribute app
