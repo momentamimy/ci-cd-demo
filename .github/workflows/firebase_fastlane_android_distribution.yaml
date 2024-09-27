@@ -30,5 +30,5 @@ jobs:
           FIREBASE_CLI_TOKEN: ${{ secrets.FIREBASE_CLI_TOKEN }}
           FIREBASE_APP_ID: ${{ secrets.FIREBASE_APP_ID }}
         run: |
-          fastlane android distribute_apk
+          bundle exec fastlane android distribute_apk
         working-directory: android
