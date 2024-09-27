@@ -28,10 +28,12 @@ jobs:
       - name: install dependencies
         run: |
           bundle install
+        working-directory: android
 
       - name: install fastlane
         run: |
           gem install fastlane -NV
+        working-directory: android
 
       - name: setup firebase-tools
         run: |  
