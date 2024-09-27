@@ -27,7 +27,7 @@ jobs:
 
       - name: build and distribute app
         env:
-          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+          FIREBASE_CLI_TOKEN: ${{ secrets.FIREBASE_CLI_TOKEN }}
         run: |
           fastlane android distribute_apk
         working-directory: android
