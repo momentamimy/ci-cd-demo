@@ -35,9 +35,9 @@ jobs:
           gem install fastlane -NV
         working-directory: android
 
-      - name: setup firebase-tools
-        run: |  
-          npm install -g firebase-tools
+#      - name: setup firebase-tools
+#        run: |
+#          npm install -g firebase-tools
 
       - name: build and distribute app
         env:
